@@ -1,0 +1,1 @@
+This is an application for remembering and finding restaurants and bars you have visited, rate and describe them! 

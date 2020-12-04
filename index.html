@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maptizer</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin="" />
+    <link rel="stylesheet" href="style.css" />
+
+
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <img src="logo.png" alt="Logo" class="logo" />
+
+      <ul class="places">
+        <form class="form hidden">
+          <div class="form__row">
+            <label class="form__label">Type</label>
+            <select class="form__input form__input--type">
+              <option value="food">Food</option>
+              <option value="bar">Bar</option>
+            </select>
+          </div>
+          <div class="form__row">
+            <label class="form__label">Name</label>
+            <input class="form__input form__input--name" placeholder="Name" />
+          </div>
+          <div class="form__row">
+            <label class="form__label">Price</label>
+            <input class="form__input form__input--price" placeholder="price" />
+          </div>
+          <div class="form__row form__row">
+            <label class="form__label">Rating</label>
+            <select class="form__input form__input--stars">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="form__row form__row">
+            <label class="form__label">Best Dish</label>
+            <input class="form__input form__input--dish" placeholder="Best dish">
+          </div>
+          <div class="form__row form__row--hidden">
+            <label class="form__label">Best Drink</label>
+            <input class="form__input form__input--drink" placeholder="Best drink">
+          </div>
+          <button class="form__btn">OK</button>
+        </form>
+
+        <!-- <li class="place place--food" data-id="1234567890">
+                <h2 class="place__title">Running on April 14</h2>
+                <div class="place__details">
+                  <span class="place__icon">🏃</span>
+                  <span class="place__value">5.2</span>
+                  <span class="place__unit">km</span>
+                </div>
+                <div class="place__details">
+                  <span class="place__icon">⏱</span>
+                  <span class="place__value">24</span>
+                  <span class="place__unit">min</span>
+                </div>
+                <div class="place__details">
+                  <span class="place__icon">⚡️</span>
+                  <span class="place__value">4.6</span>
+                  <span class="place__unit">min/km</span>
+                </div>
+                <div class="place__details">
+                  <span class="place__icon">🦶🏼</span>
+                  <span class="place__value">178</span>
+                  <span class="place__unit">spm</span>
+                </div>
+              </li>
+      
+              <li class="place place--bar" data-id="1234567891">
+                <h2 class="place__title">Cycling on April 5</h2>
+                <div class="place__details">
+                  <span class="place__icon">🚴‍♀️</span>
+                  <span class="place__value">27</span>
+                  <span class="place__unit">km</span>
+                </div>
+                <div class="place__details">
+                  <span class="place__icon">⏱</span>
+                  <span class="place__value">95</span>
+                  <span class="place__unit">min</span>
+                </div>
+                <div class="place__details">
+                  <span class="place__icon">⚡️</span>
+                  <span class="place__value">16</span>
+                  <span class="place__unit">km/h</span>
+                </div>
+                <div class="place__details">
+                  <span class="place__icon">⛰</span>
+                  <span class="place__value">223</span>
+                  <span class="place__unit">m</span>
+                </div>
+              </li> -->
+      </ul>
+    </div>
+
+    <div id="map"></div>
+
+    <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+
+    <script defer src="app.js"></script>
+  </body>
+
+</html>
